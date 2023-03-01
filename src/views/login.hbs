@@ -1,0 +1,83 @@
+{{>_nav}}
+<div class="h-100">
+  <div class="div-center">
+  <div class="bg-white p-5 mt-3 rounded-3"> 
+<ul class="nav nav-pills nav-justified mb-4" id="ex1" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="btn btn-secondary btn-sm active d-flex m-1"
+      id="tab-login"
+      data-mdb-toggle="pill"
+      href="#pills-login"
+      role="tab"
+      aria-controls="pills-login"
+      aria-selected="true"
+      >Login</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="btn btn-secondary btn-sm d-flex m-1"
+      id="tab-register"
+      data-mdb-toggle="pill"
+      href="#pills-register"
+      role="tab"
+      aria-controls="pills-register"
+      aria-selected="false"
+      >Cadastre-se</a
+    >
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <h5>Realizando o login</h5>
+    <form>
+      <div class="form-outline mb-4">
+        <input type="text" id="cpf" class="form-control" required/>
+        <label class="form-label" for="cpf">Cpf</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="password" id="loginPassword" class="form-control" required/>
+        <label class="form-label" for="loginPassword">Senha</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mb-4">Entrar</button>
+      <div class="text-center">
+        <p>Esqueceu sua senha? <a href="#!">Trocar de senha</a></p>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+    <h5>Criando uma conta</h5>
+            <form>
+              <div class="form-outline mb-4">
+                <input type="text" id="name" class="form-control" />
+                <label class="form-label" for="name">Nome</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="email" id="email" class="form-control" />
+                <label class="form-label" for="email">Email</label>
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" for="nascimento">Nascimento</label>
+                <input type="text" placeholder="00/00/0000" id="email" class="form-control" />
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control" />
+                <label class="form-label" for="loginPassword">Senha</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control" />
+                <label class="form-label" for="loginPassword">Repetir senha</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mb-4">Entrar</button>
+              <div class="text-center">
+                <p>Ao se cadastrar, você concorda com os
+                  <br> <a href="#">Termos</a> e as <a href="#">Política de Privacidade</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+{{>_footer}}

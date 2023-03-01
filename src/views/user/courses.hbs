@@ -1,0 +1,56 @@
+{{>_navUser}}
+<div class="container h-100">
+    <div class="bg-white p-3 pb-4 mt-3 rounded-3">
+        <div class="d-flex">
+            <h1><i class="ri-fire-line h1-icon"></i>   Cursos</h1> 
+        </div>
+        <form action="">
+            <div class="row">
+                <h6><i class="ri-filter-2-fill"></i> Pesquisa:</h6>
+                <div class="col-md-4">
+                    <div class="form-outline m-1">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Curso</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-outline m-1">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Centro Esportivo</label>
+                    </div>
+                </div>
+                <div class="col-md-4 d-grid">
+                    <button class="btn btn-primary m-1" type="submit"><i class="ri-search-line"></i> Pesquisar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4 pt-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="h5-courses">Aiki Do</h5>
+                    <h6 class="card-subtitle mb-2 text-muted h6-courses">Código da turma: 346</h6>
+                    <h4 class="h4-courses">Quarta e Sexta das 10:30 às 11:20</h4>
+                    <h4 class="h4-courses">Para adultos nascidos até 2005</h4>
+                    <h4 class="text-success h4-courses">13 inscritos para 15 vagas </h4>
+                    <div class="d-grid gap-2 d-md-block">
+                        <a class="btn btn-warning" href="/registry">Inscrever-se</a>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-mdb-toggle="popover"
+                            data-mdb-placement="bottom"
+                            data-mdb-content="Uma arte marcial que tem como um de
+                            seus pilares o princípio da harmonia e que se volta para a defesa pessoal,
+                            mas que tem também uma vertente de competição."
+                        >
+                            Saiba mais
+                        </button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{>_footer}}
