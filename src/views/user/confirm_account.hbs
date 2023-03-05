@@ -1,0 +1,25 @@
+{{>_nav}}
+<div class="h-100">
+    <div class="div-center">
+        <div class="bg-white p-5 mt-3 rounded-3"> 
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <h5>Cofirme sua conta: </h5>
+                    <form method="POST" action="/token/confirm/password">
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control" name="email" value="{{email}}" readonly />
+                        <label class="form-label" for="email">E-mail</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="text" id="token" class="form-control" name="token" required/>
+                        <label class="form-label" for="email">Token</label>
+                    </div>
+                    <p>Enviamos um token para o seu e-mail, digite acima e libere sua conta.</p>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{>_footer}}
